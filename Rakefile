@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Letsplayagame::Application.load_tasks
+LetsPlayAGame::Application.load_tasks

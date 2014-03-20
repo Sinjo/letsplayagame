@@ -18,3 +18,4 @@
 # Ignore things which contain secrets
 /config/database.yml
 /config/initializers/secret_token.rb
+/config/steam_api.yml

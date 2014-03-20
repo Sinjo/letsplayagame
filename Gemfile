@@ -7,6 +7,11 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'therubyracer', platforms: :ruby
 gem 'uglifier', '>= 1.3.0'
 
+group :development, :test do
+  gem 'cucumber-rails'
+  gem 'debugger'
+  gem 'rspec-rails'
+end
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 #gem 'jbuilder', '~> 1.2'
@@ -21,6 +26,3 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]

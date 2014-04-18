@@ -11,6 +11,8 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'debugger'
+  gem 'pry'
+  gem 'pry-rails'
   gem 'rspec-rails'
 end
 

@@ -1,5 +1,5 @@
 class SteamUser
-  GAME_LIST_ENDPOINT = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=%s&steamid=%s&format=json"
+  GAME_LIST_ENDPOINT = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=%s&steamid=%s&include_appinfo=1&format=json"
   RESOLVE_VANITY_URL_ENDPOINT = "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=%s&vanityurl=%s&format=json"
 
   def self.from_community_id(id)

@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+APP_PATH = File.expand_path('../../config/application',  __FILE__)
+require_relative '../config/boot'
+require APP_PATH
+Rails.application.require_environment!
+
+users = ARGV.map { |vanity_name|
+  SteamUser.from_vanity_id(vanity_name)
+}
+
+games_to_play = GamesInCommon.for_users(users)
+
+game_names = games_to_play.map { |game|
+  game["name"]
+}
+
+puts game_names
